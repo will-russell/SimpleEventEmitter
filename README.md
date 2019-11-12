@@ -2,7 +2,7 @@
 
 A simple class to extend any object to support simple events.
 
-#API
+# API
 ##Exenting a class with SimpleEventEmitter
 
 To make any class support simple events, `extend` the class with `SimpleEventEmitter`:
@@ -17,7 +17,7 @@ class ClassObject extends SimpleEventEmitter {
 
 Any instance that is created from `ClassObject` will support the methods and features of SimpleEventEmitter. 
 
-##on
+## on
 ```classObject.on('eventName', listenerFunction);```
 
 Use to subscribe to an emitted event, specifying event name and a listener function.
@@ -32,12 +32,12 @@ let unsubscribe = classObject.on('eventName', listenerFunction);
 unsubscribe();  // the listener is released!
 ```
 
-##off
+## off
 ```classObject.off('eventName', listenerFunction);```
 
 Explicitly unsubscribe to a listened event that triggers the `listenerFunction`.
 
-##emit
+## emit
 This method is the mechanism for the class object to raise events to any listeners. It takes any number of parameters, but the first one must be the event name being triggered.
 
 ```
