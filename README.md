@@ -3,7 +3,7 @@
 A simple class to extend any object to support simple events.
 
 # API
-##Exenting a class with SimpleEventEmitter
+## Exending a class with SimpleEventEmitter
 
 To make any class support simple events, `extend` the class with `SimpleEventEmitter`:
 
